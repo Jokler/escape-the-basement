@@ -1,4 +1,8 @@
 # Escape the Basement
+You are Bob Nilsen and got lost in your Basement but watch out for traps, they are really difficult to see.
 
-This project was generated using the [Bevy New 2D](https://github.com/TheBevyFlock/bevy_new_2d) template.
-Check out the [documentation](https://github.com/TheBevyFlock/bevy_new_2d/blob/main/README.md) to get started!
+## Controls
+Walk: A/D or R/T
+Reload: R
+
+![cover](./images/cover.png)
