@@ -68,7 +68,7 @@ fn on_player_entered_door(
 
         indices.level += 1;
 
-        if indices.level > 4 {
+        if indices.level > 5 {
             next_screen.set(Screen::Victory);
         }
     }
