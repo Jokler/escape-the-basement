@@ -36,16 +36,14 @@ fn created_by() -> impl Bundle {
         ["Jarle", "Sound Effects, Ideas & Basement"],
         ["masha", "Initial Brainstorming"],
         ["APH, tmtu and kilmanio", "Major Distractions"],
-        [
-            "Yuki, Claire and zealsprince",
-            "Took a few hours of my time",
-        ],
+        ["zealsprince", "Took a few hours of my time"],
     ])
 }
 
 fn assets() -> impl Bundle {
     grid(vec![
         ["Platformer Asset Pack", "o_lobster"],
+        ["Multi Patformer Tileset", "CC0 by shackhal"],
         ["Button SFX", "CC0 by Jaszunio15"],
         ["Game Sounds", "Youtube"],
     ])

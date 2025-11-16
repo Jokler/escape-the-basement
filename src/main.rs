@@ -22,6 +22,8 @@ fn main() -> AppExit {
 
 pub struct AppPlugin;
 
+const BACKGROUND_COLOR: Color = Color::srgb_u8(29, 43, 83);
+
 impl Plugin for AppPlugin {
     fn build(&self, app: &mut App) {
         // Add Bevy plugins.
@@ -68,6 +70,8 @@ impl Plugin for AppPlugin {
             )
                 .chain(),
         );
+
+        app.insert_resource(ClearColor(BACKGROUND_COLOR));
 
         // Set up the `Pause` state.
         app.init_state::<Pause>();

@@ -41,6 +41,12 @@ impl From<&EntityInstance> for ColliderBundle {
                 rotation_constraints,
                 ..Default::default()
             },
+            "Door" => ColliderBundle {
+                collider: Collider::rectangle(32., 48.),
+                rigid_body: RigidBody::Kinematic,
+                rotation_constraints,
+                ..Default::default()
+            },
             _ => ColliderBundle::default(),
         }
     }

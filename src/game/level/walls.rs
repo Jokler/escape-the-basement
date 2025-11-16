@@ -183,5 +183,5 @@ pub fn spawn_wall_collision(
 
 pub fn plugin(app: &mut App) {
     app.add_systems(Update, spawn_wall_collision)
-        .register_ldtk_int_cell::<WallBundle>(1);
+        .register_ldtk_int_cell_for_layer::<WallBundle>("WallLayer", 1);
 }

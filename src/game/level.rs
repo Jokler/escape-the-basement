@@ -40,6 +40,7 @@ pub fn spawn_level(
     level_assets: Res<LevelAssets>,
     asset_server: Res<AssetServer>,
 ) {
+    commands.insert_resource(LevelSelection::index(0));
     commands.spawn((
         Name::new("Level"),
         Transform::default(),

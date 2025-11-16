@@ -1,7 +1,4 @@
-use avian2d::{
-    PhysicsPlugins,
-    prelude::{Gravity, PhysicsDebugPlugin},
-};
+use avian2d::{PhysicsPlugins, prelude::Gravity};
 use bevy::{
     app::{App, FixedUpdate},
     math::Vec2,
@@ -14,7 +11,6 @@ pub fn plugin(app: &mut App) {
         PhysicsPlugins::default(),
         TnuaControllerPlugin::new(FixedUpdate),
         TnuaAvian2dPlugin::new(FixedUpdate),
-        PhysicsDebugPlugin,
     ))
     .insert_resource(Gravity(Vec2::NEG_Y * 300.0));
 }
